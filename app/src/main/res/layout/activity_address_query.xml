@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/text_title_style"
+        android:text="归属地查询"
+        />
+
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="请输入想要查询的号码"
+        android:phoneNumber="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_default"
+        android:onClick="query"
+        android:text="查询"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查询的结果："
+            android:textColor="#0000ff"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/address_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未知"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</LinearLayout>

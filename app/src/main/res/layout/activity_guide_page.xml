@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_marginTop="110dp"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/ic_launcher"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_marginBottom="6dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_dotView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_buttonView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/goin"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/welcome_btn_selector"
+                android:text=" 欢 迎 进 入 "
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

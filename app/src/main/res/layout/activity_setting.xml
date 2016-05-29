@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res/com.example.mobilphonesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.mobilphonesafe.ui.SettingCheckView
+        android:id="@+id/scv_setting_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itheima:bigTitle="开启自动更新">
+    </com.example.mobilphonesafe.ui.SettingCheckView>
+
+    <com.example.mobilphonesafe.ui.SettingCheckView
+        android:id="@+id/scv_setting_blacknumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itheima:bigTitle="开启黑名单拦截">
+    </com.example.mobilphonesafe.ui.SettingCheckView>
+
+    <com.example.mobilphonesafe.ui.SettingCheckView
+        android:id="@+id/scv_setting_showAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itheima:bigTitle="开启号码归属地显示">
+    </com.example.mobilphonesafe.ui.SettingCheckView>
+
+    <com.example.mobilphonesafe.ui.SettingCheckView
+        android:id="@+id/scv_setting_watchDog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itheima:bigTitle="开启程序锁">
+    </com.example.mobilphonesafe.ui.SettingCheckView>
+
+    <com.example.mobilphonesafe.ui.SettingChangeView
+        android:id="@+id/scv_change_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="changeAddressBg"
+        itheima:desc="半透明"
+        itheima:titles="归属地提示框风格">
+    </com.example.mobilphonesafe.ui.SettingChangeView>
+
+    <com.example.mobilphonesafe.ui.SettingChangeView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itheima:desc="5秒"
+        itheima:titles="归属地提示框时长">
+    </com.example.mobilphonesafe.ui.SettingChangeView>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="serverUrl">http://192.168.199.159:8080/info.json</string>
+</resources>

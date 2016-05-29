@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<TextView
+        style="@style/text_title_style"
+        android:text="高级工具"/>-->
+
+    <Button
+        style="@style/text_content_style"
+        android:background="@drawable/btn_default"
+        android:onClick="getAddress"
+        android:text="号码归属地查询"/>
+
+    <Button
+        style="@style/text_content_style"
+        android:background="@drawable/btn_default"
+        android:onClick="getCommonNumber"
+        android:text="常用号码查询"/>
+
+    <Button
+        style="@style/text_content_style"
+        android:background="@drawable/btn_default"
+        android:onClick="smsBackup"
+        android:text="短信备份"/>
+
+    <Button
+        style="@style/text_content_style"
+        android:background="@drawable/btn_default"
+        android:onClick="smsReduction"
+        android:text="短信还原"/>
+
+    <Button
+        style="@style/text_content_style"
+        android:background="@drawable/btn_default"
+        android:onClick="appLock"
+        android:text="程序锁"/>
+</LinearLayout>

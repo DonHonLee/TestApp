@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_appicon"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:src="@drawable/app"/>
+
+    <TextView
+        android:id="@+id/tv_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:layout_toRightOf="@id/iv_appicon"
+        android:paddingLeft="5dp"
+        android:text="程序名称"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_appcachesize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_appname"
+        android:layout_marginTop="3dip"
+        android:layout_toRightOf="@id/iv_appicon"
+        android:paddingLeft="5dp"
+        android:text="缓存大小"
+        android:textColor="#000000"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/iv_delete_cache"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/list_button_clean_pressed"
+        />
+
+</RelativeLayout>

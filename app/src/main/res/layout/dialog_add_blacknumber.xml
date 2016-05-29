@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="请添加黑名单号码"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:id="@+id/et_black_number"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入黑名单号码"
+        android:inputType="phone"
+        android:textColor="#0000ff"/>
+
+    <RadioGroup
+        android:id="@+id/rg_mode"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/rb_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="电话拦截"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_sms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="短信拦截"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="全部拦截"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_default"
+            android:text="确定"/>
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_default"
+            android:text="取消"/>
+    </LinearLayout>
+
+</LinearLayout>

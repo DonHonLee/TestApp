@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_appIcon"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tv_appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@id/iv_appIcon"
+        android:singleLine="true"
+        android:text="应用程序名称"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_appLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_appName"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@id/iv_appIcon"
+        android:text="安装位置"
+        android:textColor="#99000000"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_appSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_appName"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="2dip"
+        android:text=" 18Mb"
+        android:textColor="#99ff0000"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

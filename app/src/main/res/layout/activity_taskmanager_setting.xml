@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res/com.example.mobilphonesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/text_title_style"
+        android:text="进程管理设置"/>
+
+    <com.example.mobilphonesafe.ui.SettingCheckView
+        android:id="@+id/scv_show_system"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itheima:bigTitle="是否显示系统进程"/>
+    <com.example.mobilphonesafe.ui.SettingCheckView
+        android:layout_width="match_parent"
+        android:id="@+id/scv_auto_kill_process"
+        itheima:bigTitle="锁屏清理进程"
+        android:layout_height="wrap_content"/>
+    <com.example.mobilphonesafe.ui.SettingCheckView
+        android:layout_width="match_parent"
+        android:id="@+id/scv_timer_kill_process"
+        itheima:bigTitle="定时清理进程"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

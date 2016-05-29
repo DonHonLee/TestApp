@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res/com.example.mobilphonesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/text_title_style"
+        android:text="4.恭喜您设置完成"/>
+
+    <com.example.mobilphonesafe.ui.SettingCheckView
+        android:id="@+id/tv_setup4_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itheima:bigTitle="防盗保护状态">
+    </com.example.mobilphonesafe.ui.SettingCheckView>
+
+    <Button
+        android:onClick="activeAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_default"
+        android:text="点击激活设备超级管理员\n激活后可以远程锁屏，清除数据"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="3dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/presence_invisible"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/presence_invisible"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/presence_invisible"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/presence_online"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/phone"/>
+
+        <Button
+            style="@style/button_pre_style"/>
+
+        <Button
+            style="@style/button_next_style"
+            android:text="设置完成"
+            />
+    </RelativeLayout>
+</LinearLayout>
